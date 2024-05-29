@@ -1,4 +1,143 @@
+body{
+  margin: 0; /*기본 여백을 제거*/ 
+}
+
+/*두 요소가 브라우저 창 전체를 차지*/ 
+html,body{
+  width: 100%;
+  height: 100%; 
+}
+
 .nav-profile{
   width: 32px;
   height: 32px; 
+}
+
+.header{
+  height: 60px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 6px; 
+}
+
+.header-left {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 0 15px;
+}
+
+.header-right{
+  display:flex;
+  gap: 15px;
+  margin: 0 15px 0 0 ;
+  text-decoration: none; 
+}
+
+
+.main{
+  height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer{
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.google-container{
+  width: 100%; 
+  box-sizing: border-box; /*패딩이나 테두리를 포함해서 크기 계산하기*/ 
+  display:flex;
+  justify-content: center; 
+  align-items:center; 
+  padding: 78px 0 0 0; 
+  margin: 0 0 20px 0 ; 
+}
+
+.input-container{
+  width: 100%; 
+  height: 46px; 
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center; 
+  align-items:center; 
+}
+
+.input-container input {
+  width: 474px;
+  height: 100%; /* 높이를 부모 요소와 동일하게 설정*/ 
+  margin: 0 10px;
+  box-sizing: border-box; 
+  border-radius: 10px; /* 모서리 둥글기 설정 */ 
+  border: 1px solid #dadce0; 
+}
+
+.input-container input:hover{
+  box-shadow: 1px 1px 20px #ddd; /* hover 했을 때 그림자 주기*/ 
+}
+
+.input-container i {
+  margin: 0 10px;
+}
+
+.button-container{
+  width: 100%;
+  padding: 20px; 
+  box-sizing: border-box; 
+  display:flex;
+  justify-content: center; 
+  align-items:center; 
+}
+
+.button-container button{
+  padding: 0 16px; 
+  margin: 11px 4px; 
+  height: 36px; /* height 만 길이를 정해두기*/ 
+  min-width: 54px; /*반응형 웹을 위해 설정*/ 
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+
+.button-container button:hover{
+  box-shadow: 1px 1px 20px #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: underline; /* hober 할 때 밑줄 긋기 */ 
+}
+
+.footer-on{
+  padding: 15px 30px; 
+  border-bottom : 1px solid #dadce0; 
+  font-size:15px;
+}
+
+.footer-under{
+  display: flex;
+  justify-content: space-between; 
+  height: 50px;
+  padding : 0 20px; 
+  align-items:center;
+}
+
+.under-left{
+  display:flex;
+}
+
+.under-right{
+  display:flex;
+}
+
+footer a {
+  padding: 15px; 
 }
