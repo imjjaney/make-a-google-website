@@ -28,12 +28,18 @@
     <div class="input-container"> <!--입력창-->
       <i class="fa-solid fa-magnifying-glass"></i>
       <input type="text"/>
-      <i class="fa-solid fa-keyboard"></i>
-      <i class="fa-solid fa-microphone"></i>
+      <div class="tooltip"> <!--툴팁클래스-->
+        <i class="fa-solid fa-keyboard"></i><!--입력도구-->
+        <span class="tooltiptext">입력도구</span> <!--span : 툴팁텍스트를 담는 용도-->
+      </div>
+      <div class="tooltip"> <!--툴팁클래스-->
+        <i class="fa-solid fa-microphone"></i><!--음성검색-->
+        <span class="tooltiptext">음성검색</span> <!--span : 툴팁텍스트를 담는 용도 --> 
+      </div>
     </div>
     <div class="button-container"> <!--버튼 영역-->
-      <button class="button-style">Google 검색</button>
-      <button class="button-style">I'm Feeling Lucky</button>
+      <button>Google 검색</button>
+      <button>I'm Feeling Lucky</button>
     </div>
   </main>
 

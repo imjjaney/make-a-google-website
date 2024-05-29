@@ -141,3 +141,35 @@ a:hover{
 footer a {
   padding: 15px; 
 }
+
+/* ---- 툴팁 구현하기 ---- */ 
+/* 툴팁 컨테이너*/ 
+.tooltip {
+  position: relative; /* 이 요소를 기준으로 자식 요소(tooltiptext) 위치가 설정됨 */ 
+  display: inline-block; /* 너비와 패딩을 지정할 수 있는 인라인 블록으로 설정 */ 
+  cursor: pointer; /* hover 시 커서가 손가락 모양으로 바뀜 */ 
+}
+
+/* 툴팁 텍스트*/ 
+.tooltip .tooltiptext {
+  position: absolute; /* 절대 위치 설정 : 위치가 부모 요소(.tooltip) 기준으로 설정됨 */ 
+  visibility: hidden; /* 툴팁 텍스트가 hidden 되도록 함, 숨김/보임 상태 결정 */
+  opacity: 0; /* 불투명도 = 0, 보이지 않게 함 */ 
+  transition: opacity 0.5s; /* 툴팁이 나타나는 애니메이션 효과 */ 
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  z-index: 1;
+  top: 130%; /* 아래로 내려가게 설정 */
+  left: 50%;
+  transform: translateX(-50%); /* 부모 요소의 가운데에 위치 */
+}
+
+/* 마우스를 요소 위에 올렸을 때 툴팁이 보이도록 설정 */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
