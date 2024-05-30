@@ -132,39 +132,6 @@ a:hover{
   margin: 15px;
 }
 
-/* ---- 툴팁  ---- */ 
-/* 툴팁 컨테이너*/ 
-.tooltip {
-  position: relative; /* 이 요소를 기준으로 자식 요소(tooltiptext) 위치가 설정됨 */ 
-  display: inline-block; /* 너비와 패딩을 지정할 수 있는 인라인 블록으로 설정 */ 
-  cursor: pointer; 
-}
-
-/* 툴팁 텍스트*/ 
-.tooltip .tooltiptext {
-  position: absolute; /* 위치가 부모 요소(.tooltip) 기준으로 설정됨 */ 
-  visibility: hidden; /* 보이지 않게 함 */ 
-  opacity: 0; /* 보이지 않게 함 */ 
-  transition: opacity 0.5s; 
-  width: 100px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
-  z-index: 1;
-  top: 130%; 
-  left: 50%;
-  transform: translateX(-50%); 
-}
-
-/* 툴팁 효과 */ 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-/* -------------- */ 
-
 .search-icon {
   position: relative; 
   left: 50px; /* 왼쪽 기준 50px 만큼 이동 */ 
@@ -179,3 +146,4 @@ a:hover{
   position: relative;
   right: 90px; 
 }
+
