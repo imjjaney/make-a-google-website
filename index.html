@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/e9a57534d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
+  <header>
     <span class="header-left">
       <a href="#">Google 정보</a>
       <a href="#">스토어</a>
@@ -20,32 +20,32 @@
       <a href="#"><i class="fa-solid fa-user"></i></a> 
     </span>
   </header>
-
-  <main class="main">
+  
+  <div class="main">
     <div class="google-container">
       <img src="./images/google logo.png" width="272"/> 
     </div>
-    <div class="input-container"> <!--입력창-->
-      <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="input-container"> 
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
       <input type="text"/>
-      <div class="tooltip"> <!--툴팁클래스-->
-        <i class="fa-solid fa-keyboard"></i><!--입력도구-->
-        <span class="tooltiptext">입력도구</span> <!--span : 툴팁텍스트를 담는 용도-->
+      <div class="tooltip"> 
+        <i class="fa-solid fa-keyboard board-icon"></i>
+        <span class="tooltiptext">입력도구</span> 
       </div>
-      <div class="tooltip"> <!--툴팁클래스-->
-        <i class="fa-solid fa-microphone"></i><!--음성검색-->
-        <span class="tooltiptext">음성검색</span> <!--span : 툴팁텍스트를 담는 용도 --> 
+      <div class="tooltip"> 
+        <i class="fa-solid fa-microphone mic-icon"></i>
+        <span class="tooltiptext">음성검색</span> 
       </div>
     </div>
-    <div class="button-container"> <!--버튼 영역-->
+    <div class="button-container"> 
       <button>Google 검색</button>
       <button>I'm Feeling Lucky</button>
     </div>
-  </main>
+  </div>
 
-  <footer class="footer">
+  <div class="footer">
     <div class="footer-on">대한민국</div> <!--위 박스-->
-    <div class="footer-under"> <!--오른쪽 박스-->
+    <div class="footer-under"> <!--아래 박스-->
       <div class="under-left">
         <a href="#">광고</a>
         <a href="#">비즈니스</a>
@@ -57,6 +57,6 @@
         <a href="#">설정</a>
       </div>
     </div>
-  </footer>
+  </div>
 </body>
 </html>
