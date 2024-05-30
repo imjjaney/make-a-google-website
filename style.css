@@ -68,9 +68,12 @@ header {
   width: 584px;
   height: 100%; /* 높이를 부모 요소와 동일하게 설정*/ 
   margin: 0 10px;
+  padding-left: 40px;
+  padding-right: 80px;
   box-sizing: border-box; 
   border-radius: 24px; /* 모서리 둥글기 설정 */ 
   border: 1px solid #dadce0; 
+  font-size: 16px;
 }
 
 .input-container input:hover{
@@ -135,15 +138,18 @@ a:hover{
 .search-icon {
   position: relative; 
   left: 50px; /* 왼쪽 기준 50px 만큼 이동 */ 
+  color: #9aa0a6;
 }
 
 .board-icon {
   position: relative;
   right: 90px; 
+  color: #9aa0a6;
 }
 
 .mic-icon {
   position: relative;
   right: 90px; 
+  color: #9aa0a6;
 }
 
