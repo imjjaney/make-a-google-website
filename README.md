@@ -1,2 +1,2 @@
 # 도메인 주소
-https://stalwart-unicorn-dc36e0.netlify.app/
+https://benevolent-sprinkles-dc2a59.netlify.app/
